@@ -3,6 +3,7 @@ import { HEROES } from '../data/heroes'
 
 export class InMemoryDataService implements InMemoryDbService {
   createDb() {
-    return {HEROES}
+    const heroes = HEROES
+    return {heroes};
   }
 }
